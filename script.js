@@ -128,17 +128,7 @@ function loop(){
         desenharGameOver()
         return 
     }
-
-    // Desenhar a imagem de fundo
     ctx.drawImage(fundoImagem, 0, 0, canvas.width, canvas.height)
-
-    desenharPersonagem()
-    desenharObstaculo()
-    atualizarPersonagem()
-    atualizarObstaculo()
-    detectarColisao()
-    desenharPulos()
-    desenharPontuacao()
    
     requestAnimationFrame(loop)
 }
